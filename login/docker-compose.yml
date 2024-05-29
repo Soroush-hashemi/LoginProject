@@ -1,0 +1,19 @@
+﻿version: '3.9'
+services: 
+  login:  # تغییر نام از my-api به login
+    image: login
+    build:  
+      context: ./login
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+volumes:
+  mongo_data:

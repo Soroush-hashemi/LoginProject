@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AYy63PrIKHpgkgOdgtjgH5+uQiewZgqxdAsPXbR97k8=",
+  "Source": "login",
+  "BasePath": "_content/login",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
