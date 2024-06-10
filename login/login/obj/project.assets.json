@@ -1335,11 +1335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\login\\login\\login.csproj",
+      "projectUniqueName": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\LoginProject\\login\\login\\login.csproj",
       "projectName": "login",
-      "projectPath": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\login\\login\\login.csproj",
+      "projectPath": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\LoginProject\\login\\login\\login.csproj",
       "packagesPath": "C:\\Users\\soroush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\login\\login\\obj\\",
+      "outputPath": "C:\\Users\\soroush\\Desktop\\CODE\\Login\\LoginProject\\login\\login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

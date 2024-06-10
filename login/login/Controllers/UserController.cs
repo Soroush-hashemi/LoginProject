@@ -20,14 +20,14 @@ public class UserController : ControllerBase
     [HttpGet("{Id}")]
     public async Task<ActionResult<User>> Get(long Id)
     {
-        var book = await _userService.GetAsync(Id);
+        var User = await _userService.GetAsync(Id);
 
-        if (book is null)
+        if (User is null)
         {
             return NotFound();
         }
 
-        return book;
+        return User;
     }
 
     [HttpPost]
@@ -36,5 +36,35 @@ public class UserController : ControllerBase
         await _userService.CreateAsync(newUser);
 
         return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);
+    }
+
+    [HttpPut("{Id}")]
+    public async Task<IActionResult> Edit(long Id, User UpdatedUser)
+    {
+        var user = await _userService.GetAsync(Id);
+
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        UpdatedUser.Id = user.Id;
+        await _userService.UpdateAsync(Id, UpdatedUser);
+
+        return NoContent();
+    }
+
+    [HttpDelete("{Id}")]
+    public async Task<IActionResult> Delete(long Id)
+    {
+        var user = _userService.GetAsync(Id);
+
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        await _userService.RemoveAsync(Id);
+        return NoContent();
     }
 }
