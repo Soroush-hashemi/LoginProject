@@ -20,3 +20,11 @@ C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Snappier.dll
 C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\login.pdb
 C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\obj\Release\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\obj\Release\docker-c.35A3FFBA.Up2Date
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.Tokens.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.Protocols.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.Logging.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\soroush\Desktop\CODE\Login\LoginProject\login\bin\Release\Microsoft.IdentityModel.Abstractions.dll

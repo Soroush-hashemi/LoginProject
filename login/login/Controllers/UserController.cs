@@ -1,8 +1,8 @@
-﻿using LoginJwt.Model;
-using LoginJwt.Services;
+﻿using login.Model;
+using login.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LoginJwt.Controllers;
+namespace login.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -30,12 +30,28 @@ public class UserController : ControllerBase
         return User;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Post(User newUser)
+    [HttpPost("{SignUp}")]
+    public async Task<IActionResult> SignUp(User newUser)
     {
+        if (newUser == null)
+            throw new Exception();
+
         await _userService.CreateAsync(newUser);
 
         return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);
+    }
+
+    [HttpPost("{SignIn}")]
+    public string SignIn(string email, string pasword)
+    {
+        if (email is null)
+            throw new Exception();
+        if (pasword is null)
+            throw new Exception();
+
+        var token = _userService.GenerateToken(email, pasword);
+
+        return token;
     }
 
     [HttpPut("{Id}")]

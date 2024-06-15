@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace LoginJwt.Model;
+namespace login.Model;
 public class User
 {
     [BsonId]

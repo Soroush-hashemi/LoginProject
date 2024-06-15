@@ -1,4 +1,4 @@
-﻿namespace LoginJwt.Model;
+﻿namespace login.Model;
 
 public class DatabaseSettings
 {
